@@ -8,13 +8,7 @@ public class Worker : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            var settings = Settings.LoadFromFile(Constants.SettingsFile);
-            if (settings is null)
-            {
-                Console.WriteLine($"{Constants.SettingsFile} doesn't exits");
-                await StopAsync(stoppingToken);
-                return;
-            }
+            var settings = Settings.LoadFromFile(Constants.SettingsFile) ?? new Settings();
 
             foreach (var directory in settings.DirectorySettingsList)
             {
