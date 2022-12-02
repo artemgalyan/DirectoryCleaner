@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCleaner", "DirectoryCleaner\DirectoryCleaner.csproj", "{2DC3A78F-3C12-4A72-BD82-9D5FC519F350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCleanerBackgroundWorker", "DirectoryCleanerBackgroundWorker\DirectoryCleanerBackgroundWorker.csproj", "{5274A969-0EBD-44DB-9ACD-7DD38F8A5473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{D8CEEA69-CE90-48FC-9C77-78F66CE188F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DC3A78F-3C12-4A72-BD82-9D5FC519F350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC3A78F-3C12-4A72-BD82-9D5FC519F350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC3A78F-3C12-4A72-BD82-9D5FC519F350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC3A78F-3C12-4A72-BD82-9D5FC519F350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5274A969-0EBD-44DB-9ACD-7DD38F8A5473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5274A969-0EBD-44DB-9ACD-7DD38F8A5473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5274A969-0EBD-44DB-9ACD-7DD38F8A5473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5274A969-0EBD-44DB-9ACD-7DD38F8A5473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8CEEA69-CE90-48FC-9C77-78F66CE188F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CEEA69-CE90-48FC-9C77-78F66CE188F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CEEA69-CE90-48FC-9C77-78F66CE188F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CEEA69-CE90-48FC-9C77-78F66CE188F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
