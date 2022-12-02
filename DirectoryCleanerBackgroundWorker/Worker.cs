@@ -22,8 +22,7 @@ public class Worker : BackgroundService
                 DeleteOldFiles(directory.Directory, maxLifeTime, directory.CleanSubdirs);
             }
 
-            int delayTime = settings.DeleteInterval.Milliseconds;
-            await Task.Delay(millisecondsDelay: delayTime, stoppingToken);
+            await Task.Delay(settings.DeleteInterval, stoppingToken);
         }
     }
 
