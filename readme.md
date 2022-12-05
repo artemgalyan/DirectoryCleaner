@@ -14,6 +14,9 @@ This is directory cleaner - app, which silently deletes old files from your dirs
 3. *stop-tracking* - stop tracking specified dir
 4. *stop-tracking-all* - stop tracking all dirs
 5. *update-global* - update global variables:  
-    a) DeleteInterval
+    a) DeleteInterval  
     b) GlobalMaxLifeTime (is used when max file lifetime for files in dir is not specified)
 6. *print-directories* - print directories that are being tracked    
+
+# Current problems
+The main problem is to reduce the size of executables, currently when I use trimming, the part of Settings class is being trimmed and I don't know how to fix this.
