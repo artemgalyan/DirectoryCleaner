@@ -1,4 +1,4 @@
-﻿namespace Models;
+﻿namespace Common;
 
 public static class Constants
 {

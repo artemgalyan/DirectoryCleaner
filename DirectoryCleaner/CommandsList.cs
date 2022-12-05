@@ -1,4 +1,4 @@
-﻿using Models;
+﻿using Common;
 
 namespace DirectoryCleaner;
 
@@ -24,7 +24,7 @@ public class CommandsList
         if (command is null)
         {
             Console.WriteLine($"Command {args[0]} is not found");
-            Console.WriteLine("Run cleaner help to get info about available commands.");
+            Console.WriteLine("Run DirectoryCleaner help to get info about available commands.");
             return false;
         }
 

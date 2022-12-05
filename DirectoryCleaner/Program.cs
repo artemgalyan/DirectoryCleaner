@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using Models;
+using Common;
 
 namespace DirectoryCleaner;
 
@@ -10,18 +10,19 @@ public static class Program
         var settings = Settings.LoadFromFile(Constants.SettingsFile) ?? new Settings();
         if (args.Length == 0)
         {
-            Console.WriteLine("No args provided, exiting the app");
+            Console.WriteLine("Run DirectoryCleaner help for help");
             return;
         }
         var list = new CommandsList(settings)
                    .AddCommand(new AddDirectoryCommand())
                    .AddCommand(new StopTrackingDirectoryCommand())
                    .AddCommand(new StopTrackingAllDirs())
-                   .AddCommand(new UpdateGlobalPropertyCommand());
-
+                   .AddCommand(new UpdateGlobalPropertyCommand())
+                   .AddCommand(new PrintDirectoriesCommand());
+        
         if (list.Execute(args))
         {
-            Console.WriteLine(settings.ToString());
+            Console.WriteLine($"Current settings file contains following info: {settings}");
             Save(settings, Constants.SettingsFile);
         }
     }
