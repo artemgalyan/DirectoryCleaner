@@ -4,5 +4,5 @@ IHost host = Host.CreateDefaultBuilder(args)
                  .ConfigureServices(services => { services.AddHostedService<Worker>(); })
                  .Build();
 
-host.StartAsync();
-// host.Run();
+await host.RunAsync();
+// await host.StartAsync();
