@@ -1,0 +1,13 @@
+# Rider files
+
+.idea/
+
+Build/
+DirectoryCleaner/bin/
+DirectoryCleaner/obj/
+DirectoryCleanerBackgroundWorker/bin/
+DirectoryCleanerBackgroundWorker/obj/
+DirectoryCleanerBackgroundWorkerStartupService/bin/
+DirectoryCleanerBackgroundWorkerStartupService/obj/
+Common/obj/
+Common/bin/
