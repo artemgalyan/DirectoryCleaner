@@ -42,7 +42,7 @@ public class AddDirectoryCommand : Command
 
         if (!TimeSpan.TryParse(maxLifeTime, out var ts))
         {
-            Console.WriteLine($"Failed to parse --lifetime parameter");
+            Console.WriteLine("Failed to parse --lifetime parameter");
             return false;
         }
 

@@ -15,7 +15,7 @@ public class Worker : BackgroundService
                 var maxLifeTime = directory.MaxFileLifeTime ?? settings.GlobalMaxLifeTime;
                 DeleteOldFiles(directory.Directory, maxLifeTime, directory.CleanSubdirs);
             }
-
+            GC.Collect();
             await Task.Delay(settings.DeleteInterval, stoppingToken);
         }
     }

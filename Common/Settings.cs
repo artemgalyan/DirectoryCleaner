@@ -6,7 +6,7 @@ public class Settings
 {
     public TimeSpan DeleteInterval { get; set; } = TimeSpan.FromHours(1);
     public TimeSpan GlobalMaxLifeTime { get; set; } = TimeSpan.FromDays(7);
-    public List<DirectorySettings> DirectorySettingsList { get; set; } = new();
+    public List<DirectorySettings> DirectorySettingsList { get; } = new();
 
     public static Settings? LoadFromFile(string path)
     {

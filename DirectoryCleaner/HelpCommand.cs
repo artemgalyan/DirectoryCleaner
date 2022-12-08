@@ -14,7 +14,6 @@ public class HelpCommand : Command
     public override bool Execute(string[] args, Settings settings)
     {
         Console.WriteLine("[!] Time format: days:hours:minutes:seconds");
-        int alignment = _commands.MaxBy(c => c.CommandName.Length)!.CommandName.Length;
         foreach (var command in _commands)
         {
             Console.WriteLine(CommandToString(command));

@@ -32,7 +32,8 @@ public class CommandsList
         if (!command.NumberOfArguments.Contains(countOfArguments))
         {
             Console.WriteLine(
-                $"Wrong number of arguments provided. Command {command.CommandName} requires {command.NumberOfArguments} args");
+                $"Wrong number of arguments provided. Command {command.CommandName} " +
+                $"requires {command.NumberOfArguments.ToNormalizedString()} args");
             return false;
         }
         return command.Execute(args[1..], _settings);
@@ -42,5 +43,5 @@ public class CommandsList
     {
         _commands.Add(command);
         return this;
-    } 
+    }
 }
